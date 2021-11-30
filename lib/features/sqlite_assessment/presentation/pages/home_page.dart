@@ -21,19 +21,6 @@ class HomePage extends StatelessWidget {
           ],
         ));
   }
-
-  Widget _addDataFromJson(BuildContext context) {
-    return IconButton(
-      icon: const Icon(Icons.add),
-      highlightColor: Colors.black54,
-      onPressed: () => _onAddAuditEntity(context),
-    );
-  }
-
-  void _onAddAuditEntity(BuildContext context) {
-    BlocProvider.of<AuditEntitiesBloc>(context)
-        .add(const AddAuditEntityEvent());
-  }
 }
 
 Widget _buildState(BuildContext context) {

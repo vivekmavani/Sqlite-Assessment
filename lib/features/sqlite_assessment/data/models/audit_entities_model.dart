@@ -5,7 +5,7 @@
 import 'package:sqlite_assessment/features/sqlite_assessment/domain/entities/audit_entities.dart';
 
 class AuditEntitiesModel extends AuditEntities {
-   AuditEntitiesModel({
+   const AuditEntitiesModel({
     required int auditEntityId,
     required int auditId,
     required String auditEntityName,
@@ -42,10 +42,10 @@ class AuditEntitiesModel extends AuditEntities {
     sequenceNo: json["SequenceNo"],
     entityEndDate: json["EntityEndDate"] == null ? DateTime.now() : DateTime.parse(json["EntityEndDate"]),
     isLeafNode: json["IsLeafNode"] ?? false,
-    barcodeNfc: json["BarcodeNFC"] == null ? "" : json["BarcodeNFC"],
+    barcodeNfc: json["BarcodeNFC"] ?? "",
     entityLevel: json["EntityLevel"] ?? 0,
-    entityException: json["EntityException"] == null ? false : json["EntityException"],
-    scheduleOccurrenceIds: json["ScheduleOccurrenceIds"] == null ? "" : json["ScheduleOccurrenceIds"],
+    entityException: json["EntityException"] ?? false,
+    scheduleOccurrenceIds: json["ScheduleOccurrenceIds"] ?? "",
   );
 
   Map<String, dynamic> toJson() => {

@@ -20,7 +20,6 @@ class AuditEntityDao extends DatabaseAccessor<AppDatabase>
     });
   }
 
-
   Future updateAuditEntity(Insertable<AuditEntity> auditEntities) =>
       update(auditEntityTable).replace(auditEntities);
 

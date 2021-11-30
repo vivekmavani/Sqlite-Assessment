@@ -6,7 +6,6 @@ import 'package:sqlite_assessment/features/sqlite_assessment/data/datasources/lo
 import 'package:sqlite_assessment/features/sqlite_assessment/presentation/bloc/audit_entities_bloc.dart';
 import 'package:sqlite_assessment/features/sqlite_assessment/presentation/widgets/show_alert_dialog.dart';
 
-import 'message_display.dart';
 
 class AuditEntityDisplay extends StatefulWidget {
   const AuditEntityDisplay({required this.auditEntitiesList, Key? key}) : super(key: key);

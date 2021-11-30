@@ -7,13 +7,11 @@ abstract class AuditEntitiesState extends Equatable {
 class Empty extends AuditEntitiesState {
 
   @override
-  // TODO: implement props
   List<Object?> get props => [];
 }
 
 class Loading extends AuditEntitiesState {
   @override
-  // TODO: implement props
   List<Object?> get props => [];
 }
 
@@ -29,7 +27,7 @@ class Loaded extends AuditEntitiesState {
 class Error extends AuditEntitiesState {
   final String message;
 
-  Error({required this.message});
+  const Error({required this.message});
 
   @override
   List<Object?> get props => [message];

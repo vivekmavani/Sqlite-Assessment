@@ -1,0 +1,14 @@
+{
+  "AuditEntityId": 3273,
+  "AuditId": 89,
+  "AuditEntityName": "City-plus",
+  "AuditEntityTypeId": 932,
+  "AuditParentEntityId": 3257,
+  "SequenceNo": 42,
+  "EntityEndDate": "2021-10-07T06:25:02",
+  "IsLeafNode": false,
+  "BarcodeNFC": "5152914562",
+  "EntityLevel": 5,
+  "EntityException": true,
+  "ScheduleOccurrenceIds": "5700,5701,5702,5832"
+}
